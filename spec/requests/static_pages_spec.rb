@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "Static pages" do
 
-  let(:base_title) { "Ruby on Rails Tutorial Sample App" }
+  let(:base_title) { "Pacer Mate" }
   subject { page }
   
   it "should have the right links on the layout" do
@@ -28,7 +28,7 @@ describe "Static pages" do
     
     before { visit root_path }
     
-    let(:heading) { 'Sample App' }
+    let(:heading) { 'Pacer Mate' }
     let(:page_title) { '' }
 
     it_should_behave_like "all static pages"
