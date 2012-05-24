@@ -1,0 +1,126 @@
+hoppleLength
+
+Anti Choking Device
+Bandages
+Bit - Extension
+Bit - Lip Cord/Strap
+Bit - Lugging
+Bit - Other
+Bit - Pulling
+Bit - Pulling Cord
+Bit - Rubber
+Bit - Slipmouth
+Bit - Straight
+Blinkers - Block
+Blinkers - Cant See Bak
+Blinkers - Charlie Parsons
+Blinkers - European
+Blinkers - Hood
+Blinkers - Mesh Goggles
+Blinkers - Murphy Blind N/S
+Blinkers - Murphy Blind O/S
+Blinkers - Pelling Pacifiers
+Blinkers - Pull Up
+Blinkers - Sliding Block Eyes
+Blinkers - Sliding Dolly Vardens
+Blinkers - Spring Loaded
+Blinkers - Telescopic
+Bloomers Leather
+Bloomers Sheepskin
+Boots - Bell
+Boots - Bumper
+Boots - Pastern
+Boots - Scalping
+Bucking Strap
+Burr - Bit N/S
+Burr - Bit O/S
+Burr - Neckstrap N/S
+Burr - Neckstrap O/S
+Burr - Pole N/S
+Burr - Pole O/S
+Burr - Rein O/S
+Cheekers - Brush
+Cheekers - Other
+Cheekers - Sheepskin
+Chin Rest
+Comment
+Cornell Collar
+Crupper (None)
+Deafeners - Fixed
+Deafeners - Hood
+Deafeners - Plugs
+Deafeners - Removable
+Deafeners - Removable Hood
+Elbow pads
+False Shaft N/S
+False Shaft O/S
+Gaiting Strap N/S
+Gaiting Strap N/S + O/S
+Gaiting Strap O/S
+Harlee Side Bar
+Headcheck - None
+Headcheck - Release Pin
+Headcheck - Running
+Hopple Shorteners - Mobiles Only
+Hopple Shorteners - Stands Only
+Hopple Shorteners - Stands and Mobiles
+Hopple Shortners - Cord - Pin
+Hopple Shortners - Elastic
+Hopples - Flat
+Hopples - Half
+Hopples - None
+Kicking Strap
+Lugging Pole N/S
+Lugging Pole O/S
+Martingales
+May Vary Tactics
+Muzzle
+NASAL FLARE
+Neck Strap
+Nose Band - Conventional
+Nose Band - Drop
+Nose Band - Figure 8
+Nose Veil
+Open Bridle
+Pre Race Warm Up
+Rearing Strap
+Reins - Bar
+Reins - Conventional
+Reins - Pulling
+Reins - Rings
+Rogues Hood
+Shadow Roll
+Shaft Extensions
+Shaft Spreaders
+Shoes - None
+Shoes - Pads
+Shoes - Special
+Slide Up Blinkers
+Spreaders - Conventional
+Spreaders - Elastic
+Spreaders - Go Straight
+Spreaders - Guiders
+Spreaders - Menzel
+Stallion Support
+Suspenders
+Tail Tie
+Toe Weight
+Tongue Tie - Visible
+Tongue Tie - W Bit
+Undercheck
+Unhoppled (To Race Without Hopples)
+Whip
+Wind Sucking Device
+Winkers
+
+Bit - Headcheck
+Bit - Snaffle
+Blinkers - Dolly Vardon
+Boots - Knee
+Boots - Shin/Tendon
+Burr - Rein N/S
+Crupper
+Headcheck - Fixed
+Hopples - Round
+Shoes - Front
+Shoes - Hind
