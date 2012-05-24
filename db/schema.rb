@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120516160357) do
+ActiveRecord::Schema.define(:version => 20120524055916) do
+
+  create_table "horses", :force => true do |t|
+    t.string   "racing_name"
+    t.string   "stable_name"
+    t.integer  "sex"
+    t.string   "colour"
+    t.date     "foal_date"
+    t.integer  "user_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "horses", ["racing_name"], :name => "index_horses_on_racing_name"
+  add_index "horses", ["stable_name"], :name => "index_horses_on_stable_name"
+  add_index "horses", ["user_id"], :name => "index_horses_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "name"

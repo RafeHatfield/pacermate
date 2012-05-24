@@ -1,0 +1,37 @@
+rails generate model Modelname field1:string user_id:integer
+
+edit migration file, add index as required
+add_index :modelname, [:user_id, :created_at]
+
+write failing tests for the existence of the fields
+describe Modelname do
+
+  let(:user) { FactoryGirl.create(:user) }
+  before do
+    # This code is wrong!
+    @modelname = Modelname.new(field1: "Lorem ipsum", user_id: user.id)
+  end
+
+  subject { @modelname }
+
+  it { should respond_to(:field1) }
+  it { should respond_to(:user_id) }
+end
+
+rake db:migrate
+rake db:test:prepare
+
+make sure tests pass
+rspec spec/models/modelname_spec.rb
+
+add basic validity and failing test for required fields
+
+it { should be_valid }
+
+describe "when user_id is not present" do
+  before { @modelname.user_id = nil }
+  it { should_not be_valid }
+end
+
+add validity checks to make tests pass
+validates :user_id, presence: true
