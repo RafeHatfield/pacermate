@@ -3,6 +3,7 @@ hoppleLength
 Anti Choking Device
 Bandages
 Bit - Extension
+Bit - Headcheck
 Bit - Lip Cord/Strap
 Bit - Lugging
 Bit - Other
@@ -10,10 +11,12 @@ Bit - Pulling
 Bit - Pulling Cord
 Bit - Rubber
 Bit - Slipmouth
+Bit - Snaffle
 Bit - Straight
 Blinkers - Block
 Blinkers - Cant See Bak
 Blinkers - Charlie Parsons
+Blinkers - Dolly Vardon
 Blinkers - European
 Blinkers - Hood
 Blinkers - Mesh Goggles
@@ -29,8 +32,10 @@ Bloomers Leather
 Bloomers Sheepskin
 Boots - Bell
 Boots - Bumper
+Boots - Knee
 Boots - Pastern
 Boots - Scalping
+Boots - Shin/Tendon
 Bucking Strap
 Burr - Bit N/S
 Burr - Bit O/S
@@ -38,6 +43,7 @@ Burr - Neckstrap N/S
 Burr - Neckstrap O/S
 Burr - Pole N/S
 Burr - Pole O/S
+Burr - Rein N/S
 Burr - Rein O/S
 Cheekers - Brush
 Cheekers - Other
@@ -45,6 +51,7 @@ Cheekers - Sheepskin
 Chin Rest
 Comment
 Cornell Collar
+Crupper
 Crupper (None)
 Deafeners - Fixed
 Deafeners - Hood
@@ -58,6 +65,7 @@ Gaiting Strap N/S
 Gaiting Strap N/S + O/S
 Gaiting Strap O/S
 Harlee Side Bar
+Headcheck - Fixed
 Headcheck - None
 Headcheck - Release Pin
 Headcheck - Running
@@ -69,6 +77,7 @@ Hopple Shortners - Elastic
 Hopples - Flat
 Hopples - Half
 Hopples - None
+Hopples - Round
 Kicking Strap
 Lugging Pole N/S
 Lugging Pole O/S
@@ -92,6 +101,8 @@ Rogues Hood
 Shadow Roll
 Shaft Extensions
 Shaft Spreaders
+Shoes - Front
+Shoes - Hind
 Shoes - None
 Shoes - Pads
 Shoes - Special
@@ -112,15 +123,3 @@ Unhoppled (To Race Without Hopples)
 Whip
 Wind Sucking Device
 Winkers
-
-Bit - Headcheck
-Bit - Snaffle
-Blinkers - Dolly Vardon
-Boots - Knee
-Boots - Shin/Tendon
-Burr - Rein N/S
-Crupper
-Headcheck - Fixed
-Hopples - Round
-Shoes - Front
-Shoes - Hind
