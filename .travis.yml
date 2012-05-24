@@ -7,6 +7,6 @@ notifications:
     - rafe.hatfield@gmail.com
 
 before_script:
-  - "psql -c 'create database pacermate_test;' -U postgres"
+  # - "psql -c 'create database pacermate_test;' -U postgres"
   - "bundle exec rake db:drop db:create db:migrate db:test:prepare"
   
