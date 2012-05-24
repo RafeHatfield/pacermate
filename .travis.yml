@@ -7,7 +7,5 @@ notifications:
     - rafe.hatfield@gmail.com
 
 before_script:
-#   - "export DISPLAY=:99.0"
-#   - "sh -e /etc/init.d/xvfb start"
-#   - "psql -c 'create database dandelion_test;' -U postgres"
-  rake db:reset db:migrate db:test:prepare
+  - "psql -c 'create database pacermate_test;' -U postgres"
+  - "bundle exec rake db:drop db:create db:migrate db:test:prepare"
