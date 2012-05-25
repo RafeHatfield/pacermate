@@ -8,9 +8,11 @@ describe Modelname do
 
   let(:user) { FactoryGirl.create(:user) }
   before do
-    # This code is wrong!
+    # This code is wrong if user has many / belongs to relationship
     @modelname = Modelname.new(field1: "Lorem ipsum", user_id: user.id)
   end
+  # if user has many / belongs to modelname
+  before { @micropost = user.modelname.build(content: "Lorem ipsum") }
 
   subject { @modelname }
 
@@ -33,5 +35,23 @@ describe "when user_id is not present" do
   it { should_not be_valid }
 end
 
-add validity checks to make tests pass
+add validity checks to make tests pass to modelname.rb
 validates :user_id, presence: true
+
+
+check for invalide mass assignment; for this to work the following must be uncommented in application.rb
+config.active_record.whitelist_attributes = true
+
+
+  describe "accessible attributes" do
+    it "should not allow access to user_id" do
+      expect do
+        Micropost.new(user_id: user.id)
+      end.should raise_error(ActiveModel::MassAssignmentSecurity::Error)
+    end    
+  end
+
+
+update modelname.rb attr_accessible list to make previous test pass
+
+
