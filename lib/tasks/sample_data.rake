@@ -15,5 +15,12 @@ namespace :db do
                    password: password,
                    password_confirmation: password)
     end
+
+    users = User.all(limit: 6)
+    50.times do
+      stable_name = Faker::Name.first_name
+      users.each { |user| user.horses.create!(stable_name: stable_name) }
+    end
+
   end
 end

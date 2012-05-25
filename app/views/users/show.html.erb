@@ -1,5 +1,6 @@
 <% provide(:title, @user.name) %>
 <div class="row">
+
   <aside class="span4">
     <section>
       <h1>
@@ -8,4 +9,17 @@
       </h1>
     </section>
   </aside>
+
+  <div class="span8">
+
+    <% if @user.horses.any? %>
+      <h3>Horses (<%= @user.horses.count %>)</h3>
+      <ol class="horses">
+        <%= render @horses %>
+      </ol>
+      <%= will_paginate @horses %>
+    <% end %>
+
+  </div>
+
 </div>

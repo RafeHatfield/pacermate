@@ -13,11 +13,22 @@ describe "User pages" do
   end
   
   describe "profile page" do
+
     let(:user) { FactoryGirl.create(:user) }
+
+    let!(:horse1) { FactoryGirl.create(:horse, user: user, stable_name: "Foo") }
+    let!(:horse2) { FactoryGirl.create(:horse, user: user, stable_name: "Bar") }
+
     before { visit user_path(user) }
 
     it { should have_selector('h1',    text: user.name) }
     it { should have_selector('title', text: user.name) }
+
+    describe "horses" do
+      it { should have_content(horse1.stable_name) }
+      it { should have_content(horse2.stable_name) }
+      it { should have_content(user.horses.count) }
+    end
   end
   
   describe "signup" do
