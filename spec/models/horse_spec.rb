@@ -43,6 +43,16 @@ describe Horse do
     it { should_not be_valid }
   end
 
+  describe "with stable_name that is too long" do
+    before { @horse.stable_name = "a" * 101 }
+    it { should_not be_valid }
+  end
+
+  describe "with racing_name that is too long" do
+    before { @horse.racing_name = "a" * 256 }
+    it { should_not be_valid }
+  end
+
   describe "accessible attributes" do
     it "should not allow access to user_id" do
       expect do

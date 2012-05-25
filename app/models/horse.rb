@@ -19,7 +19,8 @@ class Horse < ActiveRecord::Base
   belongs_to :user
 
   validates :user_id, presence: true
-  validates :stable_name, presence: true
+  validates :stable_name, presence: true, length: { maximum: 100 }
+  validates :racing_name, length: { maximum: 255 }
 
   default_scope order: 'horses.stable_name'
 end
