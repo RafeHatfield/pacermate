@@ -4,10 +4,7 @@ describe Horse do
 
   let(:user) { FactoryGirl.create(:user) }
 
-  before do
-    # This code is wrong!
-    @horse = Horse.new(racing_name: 'Racing Name', stable_name: 'Stabby', sex: 1, colour: 'Bay', foal_date: 3.years.ago, user_id: user.id)
-  end 
+  before { @horse = user.horses.build(stable_name: "Lorem ipsum") }
 
   subject { @horse }
 
@@ -17,6 +14,7 @@ describe Horse do
   it { should respond_to(:colour) }
   it { should respond_to(:foal_date) }
   it { should respond_to(:user_id) }
+  its(:user) { should == user }
 
   it { should be_valid }
 
@@ -25,9 +23,17 @@ describe Horse do
     it { should_not be_valid }
   end
 
-  describe "when user_id is not present" do
+  describe "when stable_name is not present" do
     before { @horse.stable_name = nil }
     it { should_not be_valid }
+  end
+
+  describe "accessible attributes" do
+    it "should not allow access to user_id" do
+      expect do
+        Horse.new(user_id: user.id)
+      end.should raise_error(ActiveModel::MassAssignmentSecurity::Error)
+    end    
   end
 
 end

@@ -26,6 +26,7 @@ describe User do
   it { should respond_to(:remember_token) }
   it { should respond_to(:admin) }
   it { should respond_to(:authenticate) }
+  it { should respond_to(:horses) }
 
   it { should be_valid }
   it { should_not be_admin }
@@ -120,4 +121,29 @@ describe User do
     before { @user.save }
     its(:remember_token) { should_not be_blank }
   end
+
+  describe "horse associations" do
+
+    before { @user.save }
+    let!(:z_horse) do 
+      FactoryGirl.create(:horse, user: @user, stable_name: "Zeta")
+    end
+    let!(:a_horse) do
+      FactoryGirl.create(:horse, user: @user, stable_name: "Alpha")
+    end
+
+    it "should have the right horses in the right order" do
+      @user.horses.should == [a_horse, z_horse]
+    end
+
+    it "should destroy associated horses" do
+      horses = @user.horses
+      @user.destroy
+      horses.each do |horse|
+        Horse.find_by_id(horse.id).should be_nil
+      end
+    end
+
+  end
+
 end
