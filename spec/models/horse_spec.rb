@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: horses
+#
+#  id          :integer         not null, primary key
+#  racing_name :string(255)
+#  stable_name :string(255)
+#  sex         :integer
+#  colour      :string(255)
+#  foal_date   :date
+#  user_id     :integer
+#  created_at  :datetime        not null
+#  updated_at  :datetime        not null
+#
+
 require 'spec_helper'
 
 describe Horse do
