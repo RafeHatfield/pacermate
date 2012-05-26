@@ -68,6 +68,19 @@ describe "Authentication" do
         end
       end
       
+      describe "in the Horses controller" do
+
+        describe "submitting to the create action" do
+          before { post horses_path }
+          specify { response.should redirect_to(signin_path) }
+        end
+
+        describe "submitting to the destroy action" do
+          before { delete horse_path(FactoryGirl.create(:horse)) }
+          specify { response.should redirect_to(signin_path) }
+        end
+      end
+
       describe "when attempting to visit a protected page" do
         before do
           visit edit_user_path(user)

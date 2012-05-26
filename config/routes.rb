@@ -1,6 +1,7 @@
 PacerMateApp::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :horses, only: [:create, :destroy]
 
   # get "static_pages/home"
   # get "static_pages/help"
