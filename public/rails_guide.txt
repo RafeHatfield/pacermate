@@ -12,7 +12,7 @@ describe Modelname do
     @modelname = Modelname.new(field1: "Lorem ipsum", user_id: user.id)
   end
   # if user has many / belongs to modelname
-  before { @micropost = user.modelname.build(content: "Lorem ipsum") }
+  before { @modelname = user.modelname.build(content: "Lorem ipsum") }
 
   subject { @modelname }
 
