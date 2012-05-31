@@ -1,7 +1,47 @@
-<%= form_for(@horse) do |f| %>
+<%= form_for @horse, :html => { :class => "form-horizontal", :id => "horse_form", :style => "padding-left:20px" } do |f| %>
 
   <%= render 'shared/error_messages', object: f.object %>
 
+  <fieldset>
+
+    <div class="control-group">
+      <%= f.label :stable_name, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :stable_name, :class => "input-xlarge" %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :racing_name, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :racing_name, :class => "input-xlarge" %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :sex, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :sex, :class => "input-xlarge" %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :colour, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :colour, :class => "input-xlarge" %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :foal_date, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :foal_date, :class => "input-xlarge" %>
+      </div>
+    </div>
+
+  </fieldset>
+
+<!-- 
   <div class="field">
 
     <%= f.label :stable_name %>
@@ -20,7 +60,20 @@
     <%= f.text_field :foal_date %>
 
   </div>
-
+ -->
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
-  
+
 <% end %>
+
+<!-- <form class="form-horizontal">
+  <fieldset>
+    <legend>Legend text</legend>
+    <div class="control-group">
+      <label class="control-label" for="input01">Text input</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input01">
+        <p class="help-block">Supporting help text</p>
+      </div>
+    </div>
+  </fieldset>
+</form> -->
