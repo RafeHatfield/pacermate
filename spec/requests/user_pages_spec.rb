@@ -25,11 +25,34 @@ describe "User pages" do
     it { should have_selector('h2',    text: user.name) }
     it { should have_selector('title', text: user.name) }
 
+    # anon users should not see link to add horses
+    it { should_not have_link("Add Horse") }
+
     describe "horses" do
       it { should have_content(horse1.stable_name) }
       it { should have_content(horse2.stable_name) }
       it { should have_content(user.horses.count) }
     end
+
+    describe "as a logged in user" do
+
+      before do
+        sign_in user
+        visit user_path(user)
+      end
+
+      it { should have_link("Add Horse")}
+
+      describe "should only see add horse on your own profile" do
+        let(:user2) { FactoryGirl.create(:user, email: "test2@test.com" )}
+        before do
+          visit user_path(user2)
+        end
+        it { should_not have_link("Add Horse") }
+      end
+
+    end
+
   end
   
   describe "signup" do

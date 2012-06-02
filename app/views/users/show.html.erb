@@ -8,8 +8,9 @@
         My Stable (<%= @user.horses.count %>) 
       </h1>
       
-      <a data-toggle="modal" href="#myModal" class="btn btn-primary" style="margin: 0 0 20px 20px">Add Horse</a>
-      
+      <% if signed_in? && current_user?(@user) %>
+        <a data-toggle="modal" href="#myModal" class="btn btn-primary" style="margin: 0 0 20px 20px">Add Horse</a>
+      <% end %>
       <ol class="horses">
         <%= render @horses %>
       </ol>
