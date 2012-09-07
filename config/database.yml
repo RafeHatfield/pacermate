@@ -2,14 +2,14 @@ development:
   adapter: postgresql
   database: pacermate_dev
   username: postgres
-  password: postgres$
+  password: suite101
   host: 127.0.0.1
 
 test:
   adapter: postgresql
   database: pacermate_test
   username: postgres
-  password: postgres$
+  password: suite101
   host: 127.0.0.1
 
 production:
