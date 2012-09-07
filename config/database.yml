@@ -17,7 +17,7 @@ production:
   database: pacermate_live
   username: postgres
   password: pmdbuser$
-  host: localhost
+  host: 50.116.13.77
 
 
 # # SQLite version 3.x
