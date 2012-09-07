@@ -8,6 +8,7 @@ gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.5'
 gem 'capistrano'
 gem 'rvm-capistrano'
+gem 'therubyracer'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
