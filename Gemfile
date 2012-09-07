@@ -9,9 +9,10 @@ gem 'bootstrap-will_paginate', '0.0.5'
 gem 'capistrano'
 gem 'rvm-capistrano'
 gem 'therubyracer'
+gem 'pg'
 
 group :development, :test do
-  gem 'sqlite3'
+  # gem 'sqlite3'
   gem 'rspec-rails', '2.9.0'
   gem 'annotate', '~> 2.4.1.beta' 
 end
@@ -32,6 +33,6 @@ group :test do
   gem 'factory_girl_rails', '1.4.0'
 end
 
-group :production do
-  gem 'pg'
-end
+# group :production do
+#   gem 'pg'
+# end
