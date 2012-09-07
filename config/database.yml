@@ -1,21 +1,21 @@
 development:
   adapter: postgresql
   database: pacermate_dev
-  username: pmdbuser
+  username: postgres
   password: pmdbuser$
   host: localhost
 
 test:
   adapter: postgresql
   database: pacermate_test
-  username: pmdbuser
+  username: postgres
   password: pmdbuser$
   host: localhost
 
 production:
   adapter: postgresql
   database: pacermate_live
-  username: pmdbuser
+  username: postgres
   password: pmdbuser$
   host: localhost
 
