@@ -2,21 +2,21 @@ development:
   adapter: postgresql
   database: pacermate_dev
   username: postgres
-  password: pmdbuser$
+  password: postgres$
   host: 127.0.0.1
 
 test:
   adapter: postgresql
   database: pacermate_test
   username: postgres
-  password: pmdbuser$
+  password: postgres$
   host: 127.0.0.1
 
 production:
   adapter: postgresql
   database: pacermate_live
   username: postgres
-  password: pmdbuser$
+  password: postgres$
   host: 127.0.0.1
 
 
