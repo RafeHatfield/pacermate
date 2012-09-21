@@ -10,6 +10,7 @@ gem 'capistrano'
 gem 'rvm-capistrano'
 gem 'therubyracer'
 gem 'pg'
+gem 'newrelic_rpm'
 
 group :development, :test do
   # gem 'sqlite3'

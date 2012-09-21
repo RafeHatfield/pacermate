@@ -94,6 +94,7 @@ GEM
     net-ssh (2.5.2)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
+    newrelic_rpm (3.4.2.1)
     nokogiri (1.5.5)
     pg (0.14.1)
     polyglot (0.3.3)
@@ -182,6 +183,7 @@ DEPENDENCIES
   factory_girl_rails (= 1.4.0)
   faker (= 1.0.1)
   jquery-rails
+  newrelic_rpm
   pg
   rails (= 3.2.3)
   rspec-rails (= 2.9.0)
